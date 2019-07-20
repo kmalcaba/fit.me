@@ -55,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Cancel Scanning", Toast.LENGTH_LONG).show();
             }
             else{
-                Toast.makeText(this, result.getContents(), Toast.LENGTH_LONG).show();
                 if(result.getContents().toString().equals("3954-2930-4954-2912")){
                     startActivity(new Intent(MainActivity.this, Img7.class));
                 } else if(result.getContents().toString().equals("2154-5210-2351-0293")){
