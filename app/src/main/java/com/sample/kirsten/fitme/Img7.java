@@ -8,6 +8,6 @@ public class Img7 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_img7);
+//        setContentView(R.layout.activity_img7);
     }
 }
