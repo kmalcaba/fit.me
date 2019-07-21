@@ -1,5 +1,6 @@
 package com.sample.kirsten.fitme;
 
+import com.unity3d.player.UnityPlayer;
 import com.unity3d.player.UnityPlayerActivity;
 
 import android.content.Intent;
@@ -25,6 +26,7 @@ public class ARView extends UnityPlayerActivity {
         Uri data = intent.getData();
         if(intent != null && data != null) {
             params = data.toString();
+            UnityPlayer.UnitySendMessage("fitme2", "Start", "");
             mUnityPlayer.start();
         }
     }
